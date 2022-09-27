@@ -17,6 +17,8 @@ cy.get("input#signInSubmit").click()
 
 
 }
-)}
+)
+
+}
 
 )
