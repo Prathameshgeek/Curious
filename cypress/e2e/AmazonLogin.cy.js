@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 
 describe('amazonLogin' , () => {    // Describe block is like test suite
 
@@ -15,10 +17,13 @@ cy.get("input#ap_password").type("dummygmail@1234")
 
 cy.get("input#signInSubmit").click()
 
+cy.xpath("//span[text()='Hello, Dummy']").should('have.text' , 'Hello, Dummy')
 
-}
-)
 
-}
 
-)
+cy.xpath("//span[text()='Hello, Dummy']").trigger('mouseover') // hover mouse
+
+cy.xpath("//span[text()='Sign Out']").click()
+
+})
+})
