@@ -26,4 +26,6 @@ cy.xpath("//span[text()='Hello, Dummy']").trigger('mouseover') // hover mouse
 cy.xpath("//span[text()='Sign Out']").click()
 
 })
-})
+
+}
+)
