@@ -9,17 +9,15 @@ cy.visit("https://www.amazon.in/")
 
 cy.get("#nav-link-accountList").click()
  
-cy.get("input#ap_email").type("dummygmail1234@gmail.com")
+cy.get("input#ap_email").type(privatedata("email"))
 
 cy.get("span#continue").click()
 
-cy.get("input#ap_password").type("dummygmail@1234")
+cy.get("input#ap_password").type(privatedata("password"))
 
 cy.get("input#signInSubmit").click()
 
 cy.xpath("//span[text()='Hello, Dummy']").should('have.text' , 'Hello, Dummy')
-
-
 
 cy.xpath("//span[text()='Hello, Dummy']").trigger('mouseover') // hover mouse
 
