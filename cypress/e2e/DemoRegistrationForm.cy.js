@@ -15,6 +15,12 @@ describe('amazonLogin' , () => {
 
          cy.get("#form3Example8").click({force: true}).type("TESTGOAN")
 
+         cy.xpath("(//span[@class='select-arrow'])[4]").click({force: true})
+         cy.xpath("(//span[@class='select-option-text'])[3]").click({force: true})
+
+         cy.xpath("(//span[@class='select-arrow'])[5]").click({force: true})
+         cy.xpath("(//div[@class='select-option'])[3]").click({force: true})
+
          
 
          cy.get("#form3Example90").click({force: true}).type("123456")
@@ -24,6 +30,10 @@ describe('amazonLogin' , () => {
          cy.get("div.form-check.form-check-inline.mb-0.me-4").should('not.be.checked')
 
          cy.xpath("(//input[@id='otherGender'])[2]").click({force: true})
+
+         cy.xpath("//button[text()='Submit form']").click({force: true})
+
+        
 
 
 
