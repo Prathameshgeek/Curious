@@ -8,10 +8,8 @@
   },
   "author": "Prathamesh",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^10.8.0"
-  },
   "devDependencies": {
+    "cypress": "^10.9.0",
     "cypress-xpath": "^2.0.1"
   }
 }
